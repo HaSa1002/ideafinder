@@ -27,7 +27,6 @@ func replace(string : String, what : String, forwhat : String) -> String:
 func generate(line : String) -> String:
 	var result := line
 	for word in Content.words:
-		print(word)
 		var pos = result.find(word)
 		while pos != -1:
 			result = replace(result, word, rand_word(word))
